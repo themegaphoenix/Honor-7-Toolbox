@@ -18,19 +18,19 @@ using System.IO;
 
 namespace Honor_7_Toolbox
 {
-    public partial class DownloadingHiSuite : Syncfusion.Windows.Forms.MetroForm
+    public partial class InstallingADB : Syncfusion.Windows.Forms.MetroForm
     {
         
-        public DownloadingHiSuite()
+        public InstallingADB()
         {
             InitializeComponent();
         }
 
-        private void DownloadingHiSuite_Load(object sender, EventArgs e)
+        private void InstallingADB_Load(object sender, EventArgs e)
         {
             
             StatusLabel.Text = "Downloading...";
-            if (File.Exists("HiSuite.exe"))
+            if (File.Exists("UniversalAdbDriverSetup.msi"))
             {
                 completeLbL.Visible = true;
                 installBtn.Visible = true;
@@ -44,8 +44,8 @@ namespace Honor_7_Toolbox
                 {
 
                     wc.DownloadProgressChanged += wc_DownloadProgressChanged;
-                    wc.DownloadFileAsync(new System.Uri("https://copy.com/odjELiupzuLRLkPE/HiSuiteSetup_2.3.55.1.exe?download=1"),
-                    "HiSuite.exe");
+                    wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
+                    "UniversalAdbDriverSetup.msi");
 
                 }
             }
@@ -77,7 +77,7 @@ namespace Honor_7_Toolbox
         {
             try
             {
-                System.Diagnostics.Process.Start("HiSuite.exe");
+                System.Diagnostics.Process.Start("UniversalAdbDriverSetup.msi");
                 this.Close();
             }
             catch
@@ -100,8 +100,8 @@ namespace Honor_7_Toolbox
             {
 
                 wc.DownloadProgressChanged += wc_DownloadProgressChanged;
-                wc.DownloadFileAsync(new System.Uri("https://copy.com/odjELiupzuLRLkPE/HiSuiteSetup_2.3.55.1.exe?download=1"),
-                "HiSuite.exe");
+                wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
+                "UniversalAdbDriverSetup.msi");
 
             }
 

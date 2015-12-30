@@ -7,7 +7,7 @@
 #endregion
 namespace Honor_7_Toolbox
 {
-    partial class DownloadingHiSuite
+    partial class InstallingADB
     {
         /// <summary>
         /// Required designer variable.
@@ -41,9 +41,7 @@ namespace Honor_7_Toolbox
             this.installBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.completeLbL = new System.Windows.Forms.Label();
             this.downBtn = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // progressBar
@@ -63,7 +61,7 @@ namespace Honor_7_Toolbox
             this.progressBar.ForegroundImage = null;
             this.progressBar.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
             this.progressBar.GradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(165)))), ((int)(((byte)(220)))));
-            this.progressBar.Location = new System.Drawing.Point(34, 94);
+            this.progressBar.Location = new System.Drawing.Point(57, 74);
             this.progressBar.MultipleColors = new System.Drawing.Color[0];
             this.progressBar.Name = "progressBar";
             this.progressBar.ProgressStyle = Syncfusion.Windows.Forms.Tools.ProgressBarStyles.Metro;
@@ -82,7 +80,7 @@ namespace Honor_7_Toolbox
             this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Roboto Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(52, 50);
+            this.StatusLabel.Location = new System.Drawing.Point(107, 35);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(120, 25);
             this.StatusLabel.TabIndex = 2;
@@ -100,7 +98,7 @@ namespace Honor_7_Toolbox
             this.installBtn.Name = "installBtn";
             this.installBtn.Size = new System.Drawing.Size(174, 44);
             this.installBtn.TabIndex = 3;
-            this.installBtn.Text = "Install HiSuite";
+            this.installBtn.Text = "Install Universal ADB Drivers";
             this.installBtn.Visible = false;
             this.installBtn.Click += new System.EventHandler(this.installBtn_Click);
             // 
@@ -123,7 +121,7 @@ namespace Honor_7_Toolbox
             this.downBtn.BeforeTouchSize = new System.Drawing.Size(174, 44);
             this.downBtn.ForeColor = System.Drawing.Color.Black;
             this.downBtn.IsBackStageButton = false;
-            this.downBtn.Location = new System.Drawing.Point(57, 138);
+            this.downBtn.Location = new System.Drawing.Point(103, 118);
             this.downBtn.MetroColor = System.Drawing.Color.White;
             this.downBtn.Name = "downBtn";
             this.downBtn.Size = new System.Drawing.Size(174, 44);
@@ -132,32 +130,20 @@ namespace Honor_7_Toolbox
             this.downBtn.Visible = false;
             this.downBtn.Click += new System.EventHandler(this.downBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.hisuite;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(299, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 89);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
-            // DownloadingHiSuite
+            // InstallingADB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(415, 297);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.downBtn);
             this.Controls.Add(this.completeLbL);
             this.Controls.Add(this.installBtn);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.progressBar);
-            this.Name = "DownloadingHiSuite";
-            this.Text = "HiSuite Installation";
-            this.Load += new System.EventHandler(this.DownloadingHiSuite_Load);
+            this.Name = "InstallingADB";
+            this.Text = "ADB Installation";
+            this.Load += new System.EventHandler(this.InstallingADB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,6 +156,5 @@ namespace Honor_7_Toolbox
         private Syncfusion.Windows.Forms.ButtonAdv installBtn;
         private System.Windows.Forms.Label completeLbL;
         private Syncfusion.Windows.Forms.ButtonAdv downBtn;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

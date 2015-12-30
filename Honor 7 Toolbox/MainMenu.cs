@@ -19,7 +19,7 @@ namespace Honor_7_Toolbox
 {
     public partial class MainMenu : Syncfusion.Windows.Forms.MetroForm
     {
-        private DownloadingHiSuite DownloadingHiSuite;
+        private ToolsInstallMenu ToolsInstallMenu;
         public MainMenu()
         {
             InitializeComponent();
@@ -38,8 +38,8 @@ namespace Honor_7_Toolbox
 
         private void StartBtn_Click(object sender, EventArgs e)
         {
-            DownloadingHiSuite = new DownloadingHiSuite();
-            DownloadingHiSuite.Show();
+            ToolsInstallMenu = new ToolsInstallMenu();
+            ToolsInstallMenu.Show();
 
         }
     }
