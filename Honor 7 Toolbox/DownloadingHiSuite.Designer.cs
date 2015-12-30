@@ -153,7 +153,11 @@ namespace Honor_7_Toolbox
             this.Controls.Add(this.installBtn);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.progressBar);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(427, 333);
+            this.MinimumSize = new System.Drawing.Size(427, 333);
             this.Name = "DownloadingHiSuite";
+            this.ShowMaximizeBox = false;
             this.Text = "HiSuite Installation";
             this.Load += new System.EventHandler(this.DownloadingHiSuite_Load);
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).EndInit();
