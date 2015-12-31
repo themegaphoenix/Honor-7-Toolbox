@@ -42,7 +42,6 @@ namespace Honor_7_Toolbox
             {
                 using (WebClient wc = new WebClient())
                 {
-
                     wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                     wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
                     "UniversalAdbDriverSetup.msi");
@@ -50,7 +49,6 @@ namespace Honor_7_Toolbox
                 }
             }
 
-            
 
 
 
@@ -95,15 +93,15 @@ namespace Honor_7_Toolbox
             completeLbL.Visible = false;
             StatusLabel.Text = "Downloading...";
             downBtn.Visible = false;
-     
-            using (WebClient wc = new WebClient())
-            {
 
+           using (WebClient wc = new WebClient())
+            {
                 wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                 wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
                 "UniversalAdbDriverSetup.msi");
 
-            }
+           }
+            
 
         }
     }

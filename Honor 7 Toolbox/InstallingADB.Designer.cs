@@ -82,7 +82,7 @@ namespace Honor_7_Toolbox
             this.StatusLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.Font = new System.Drawing.Font("Roboto Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StatusLabel.Location = new System.Drawing.Point(203, 31);
+            this.StatusLabel.Location = new System.Drawing.Point(179, 33);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(120, 25);
             this.StatusLabel.TabIndex = 2;

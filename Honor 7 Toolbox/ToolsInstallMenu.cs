@@ -37,5 +37,18 @@ namespace Honor_7_Toolbox
             InstallingADB = new InstallingADB();
             InstallingADB.Show();
         }
+
+        private void buttonAdv3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(@"hue.bat","cmd.exe");
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+            }
+        }
     }
 }
