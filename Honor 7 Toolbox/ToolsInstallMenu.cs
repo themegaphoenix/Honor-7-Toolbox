@@ -20,6 +20,7 @@ namespace Honor_7_Toolbox
     {
         private DownloadingHiSuite DownloadingHiSuite;
         private InstallingADB InstallingADB;
+        private MainMenu MainMenu;
 
         public ToolsInstallMenu()
         {
@@ -42,7 +43,9 @@ namespace Honor_7_Toolbox
         {
             try
             {
-                System.Diagnostics.Process.Start(@"hue.bat","cmd.exe");
+                System.Diagnostics.Process.Start(@"files\hue.bat");
+                MainMenu = new MainMenu();
+                MainMenu.Show();
                 this.Close();
             }
             catch
@@ -50,5 +53,8 @@ namespace Honor_7_Toolbox
                 MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
             }
         }
+
+       
+
     }
 }

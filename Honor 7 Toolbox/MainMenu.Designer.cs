@@ -38,6 +38,7 @@ namespace Honor_7_Toolbox
             this.components = new System.ComponentModel.Container();
             this.tileLayout1 = new Syncfusion.Windows.Forms.Tools.TileLayout();
             this.StartBtn = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.bootloaderBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             ((System.ComponentModel.ISupportInitialize)(this.tileLayout1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileLayout1.MainLayout)).BeginInit();
             this.SuspendLayout();
@@ -96,11 +97,34 @@ namespace Honor_7_Toolbox
             this.StartBtn.UseVisualStyle = true;
             this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
+            // bootloaderBtn
+            // 
+            this.bootloaderBtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.bootloaderBtn.BackColor = System.Drawing.Color.Transparent;
+            this.bootloaderBtn.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.Tools;
+            this.bootloaderBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bootloaderBtn.BeforeTouchSize = new System.Drawing.Size(118, 122);
+            this.bootloaderBtn.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bootloaderBtn.ForeColor = System.Drawing.Color.Black;
+            this.bootloaderBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bootloaderBtn.IsBackStageButton = false;
+            this.bootloaderBtn.Location = new System.Drawing.Point(192, 51);
+            this.bootloaderBtn.MetroColor = System.Drawing.Color.White;
+            this.bootloaderBtn.Name = "bootloaderBtn";
+            this.bootloaderBtn.Size = new System.Drawing.Size(118, 122);
+            this.bootloaderBtn.TabIndex = 2;
+            this.bootloaderBtn.Text = "Bootloader";
+            this.bootloaderBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bootloaderBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.bootloaderBtn.UseVisualStyle = true;
+            this.bootloaderBtn.Click += new System.EventHandler(this.bootloaderBtn_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 479);
+            this.Controls.Add(this.bootloaderBtn);
             this.Controls.Add(this.StartBtn);
             this.Controls.Add(this.tileLayout1);
             this.Name = "MainMenu";
@@ -116,5 +140,6 @@ namespace Honor_7_Toolbox
 
         private Syncfusion.Windows.Forms.Tools.TileLayout tileLayout1;
         private Syncfusion.Windows.Forms.ButtonAdv StartBtn;
+        private Syncfusion.Windows.Forms.ButtonAdv bootloaderBtn;
     }
 }

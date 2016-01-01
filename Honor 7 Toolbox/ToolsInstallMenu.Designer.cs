@@ -37,11 +37,12 @@ namespace Honor_7_Toolbox
         {
             this.components = new System.ComponentModel.Container();
             this.InstallHiSuiteBtn = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.buttonAdv2 = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.installADBbtn = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.hue = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonAdv3 = new Syncfusion.Windows.Forms.ButtonAdv();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,32 +61,43 @@ namespace Honor_7_Toolbox
             this.InstallHiSuiteBtn.Text = "Install HiSuite";
             this.InstallHiSuiteBtn.Click += new System.EventHandler(this.InstallHiSuiteBtn_Click);
             // 
-            // buttonAdv1
+            // installADBbtn
             // 
-            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv1.BackColor = System.Drawing.Color.White;
-            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(159, 45);
-            this.buttonAdv1.ForeColor = System.Drawing.Color.Black;
-            this.buttonAdv1.IsBackStageButton = false;
-            this.buttonAdv1.Location = new System.Drawing.Point(219, 130);
-            this.buttonAdv1.Name = "buttonAdv1";
-            this.buttonAdv1.Size = new System.Drawing.Size(159, 45);
-            this.buttonAdv1.TabIndex = 1;
-            this.buttonAdv1.Text = "Install ADB";
-            this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
+            this.installADBbtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.installADBbtn.BackColor = System.Drawing.Color.White;
+            this.installADBbtn.BeforeTouchSize = new System.Drawing.Size(159, 45);
+            this.installADBbtn.ForeColor = System.Drawing.Color.Black;
+            this.installADBbtn.IsBackStageButton = false;
+            this.installADBbtn.Location = new System.Drawing.Point(219, 130);
+            this.installADBbtn.Name = "installADBbtn";
+            this.installADBbtn.Size = new System.Drawing.Size(159, 45);
+            this.installADBbtn.TabIndex = 1;
+            this.installADBbtn.Text = "Install ADB";
+            this.installADBbtn.Click += new System.EventHandler(this.buttonAdv1_Click);
             // 
-            // buttonAdv2
+            // hue
             // 
-            this.buttonAdv2.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv2.BackColor = System.Drawing.Color.White;
-            this.buttonAdv2.BeforeTouchSize = new System.Drawing.Size(115, 41);
-            this.buttonAdv2.ForeColor = System.Drawing.Color.Black;
-            this.buttonAdv2.IsBackStageButton = false;
-            this.buttonAdv2.Location = new System.Drawing.Point(413, 333);
-            this.buttonAdv2.Name = "buttonAdv2";
-            this.buttonAdv2.Size = new System.Drawing.Size(115, 41);
-            this.buttonAdv2.TabIndex = 2;
-            this.buttonAdv2.Text = "Go Back";
+            this.hue.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.hue.BackColor = System.Drawing.Color.White;
+            this.hue.BeforeTouchSize = new System.Drawing.Size(159, 45);
+            this.hue.ForeColor = System.Drawing.Color.Black;
+            this.hue.IsBackStageButton = false;
+            this.hue.Location = new System.Drawing.Point(219, 222);
+            this.hue.Name = "hue";
+            this.hue.Size = new System.Drawing.Size(159, 45);
+            this.hue.TabIndex = 9;
+            this.hue.Text = "Install Huawei Update Extractor";
+            this.hue.Click += new System.EventHandler(this.buttonAdv3_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.huawei;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(413, 212);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(101, 103);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -107,37 +119,24 @@ namespace Honor_7_Toolbox
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonAdv3
-            // 
-            this.buttonAdv3.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.buttonAdv3.BackColor = System.Drawing.Color.White;
-            this.buttonAdv3.BeforeTouchSize = new System.Drawing.Size(159, 45);
-            this.buttonAdv3.ForeColor = System.Drawing.Color.Black;
-            this.buttonAdv3.IsBackStageButton = false;
-            this.buttonAdv3.Location = new System.Drawing.Point(219, 222);
-            this.buttonAdv3.Name = "buttonAdv3";
-            this.buttonAdv3.Size = new System.Drawing.Size(159, 45);
-            this.buttonAdv3.TabIndex = 9;
-            this.buttonAdv3.Text = "Install Huawei Update Extractor";
-            this.buttonAdv3.Click += new System.EventHandler(this.buttonAdv3_Click);
-            // 
             // ToolsInstallMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 375);
-            this.Controls.Add(this.buttonAdv3);
+            this.ClientSize = new System.Drawing.Size(540, 328);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.hue);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.buttonAdv2);
-            this.Controls.Add(this.buttonAdv1);
+            this.Controls.Add(this.installADBbtn);
             this.Controls.Add(this.InstallHiSuiteBtn);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(552, 411);
-            this.MinimumSize = new System.Drawing.Size(552, 411);
+            this.MaximumSize = new System.Drawing.Size(552, 364);
+            this.MinimumSize = new System.Drawing.Size(552, 364);
             this.Name = "ToolsInstallMenu";
             this.ShowMaximizeBox = false;
             this.Text = "Tools Installation Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -147,10 +146,10 @@ namespace Honor_7_Toolbox
         #endregion
 
         private Syncfusion.Windows.Forms.ButtonAdv InstallHiSuiteBtn;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv2;
+        private Syncfusion.Windows.Forms.ButtonAdv installADBbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv3;
+        private Syncfusion.Windows.Forms.ButtonAdv hue;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -30,7 +30,7 @@ namespace Honor_7_Toolbox
         {
             
             StatusLabel.Text = "Downloading...";
-            if (File.Exists("UniversalAdbDriverSetup.msi"))
+            if (File.Exists(@"files\UniversalAdbDriverSetup.msi"))
             {
                 completeLbL.Visible = true;
                 installBtn.Visible = true;
@@ -44,7 +44,7 @@ namespace Honor_7_Toolbox
                 {
                     wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                     wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
-                    "UniversalAdbDriverSetup.msi");
+                    @"files\UniversalAdbDriverSetup.msi");
 
                 }
             }
@@ -75,7 +75,7 @@ namespace Honor_7_Toolbox
         {
             try
             {
-                System.Diagnostics.Process.Start("UniversalAdbDriverSetup.msi");
+                System.Diagnostics.Process.Start(@"files\UniversalAdbDriverSetup.msi");
                 this.Close();
             }
             catch
@@ -98,7 +98,7 @@ namespace Honor_7_Toolbox
             {
                 wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                 wc.DownloadFileAsync(new System.Uri("http://goo.gl/vEfKJr"),
-                "UniversalAdbDriverSetup.msi");
+               @"files\UniversalAdbDriverSetup.msi");
 
            }
             

@@ -1,4 +1,9 @@
 echo off
+cd files
+echo ===============================================================================
+echo ***                    HONOR 7 ToolBox by TheMegaPhoenix                    ***
+echo ***                      Huawei Update Extractor Tool                       ***
+echo ===============================================================================
 if exist "./HuaweiUpdateExtractor/HuaweiUpdateExtractor.exe" (
 cls
 echo ===============================================================================

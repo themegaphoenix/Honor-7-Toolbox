@@ -20,15 +20,13 @@ namespace Honor_7_Toolbox
     public partial class MainMenu : Syncfusion.Windows.Forms.MetroForm
     {
         private ToolsInstallMenu ToolsInstallMenu;
+        private Bootloader Bootloader;
         public MainMenu()
         {
             InitializeComponent();
         }
 
-        private void imageStreamer1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
@@ -40,7 +38,15 @@ namespace Honor_7_Toolbox
         {
             ToolsInstallMenu = new ToolsInstallMenu();
             ToolsInstallMenu.Show();
+            
 
+        }
+
+        private void bootloaderBtn_Click(object sender, EventArgs e)
+        {
+            Bootloader = new Bootloader();
+            Bootloader.Show();
+            
         }
     }
     

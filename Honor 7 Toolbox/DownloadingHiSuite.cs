@@ -30,7 +30,7 @@ namespace Honor_7_Toolbox
         {
             
             StatusLabel.Text = "Downloading...";
-            if (File.Exists("HiSuite.exe"))
+            if (File.Exists(@"files\HiSuite.exe"))
             {
                 completeLbL.Visible = true;
                 installBtn.Visible = true;
@@ -45,7 +45,7 @@ namespace Honor_7_Toolbox
 
                     wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                     wc.DownloadFileAsync(new System.Uri("https://copy.com/odjELiupzuLRLkPE/HiSuiteSetup_2.3.55.1.exe?download=1"),
-                    "HiSuite.exe");
+                    @"files\HiSuite.exe");
 
                 }
             }
@@ -77,14 +77,14 @@ namespace Honor_7_Toolbox
         {
             try
             {
-                System.Diagnostics.Process.Start("HiSuite.exe");
+                System.Diagnostics.Process.Start(@"files\HiSuite.exe");
                 this.Close();
             }
             catch
             {
                 MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
             }
-            
+  
 
             
         }
@@ -101,7 +101,7 @@ namespace Honor_7_Toolbox
 
                 wc.DownloadProgressChanged += wc_DownloadProgressChanged;
                 wc.DownloadFileAsync(new System.Uri("https://copy.com/odjELiupzuLRLkPE/HiSuiteSetup_2.3.55.1.exe?download=1"),
-                "HiSuite.exe");
+                @"files\HiSuite.exe");
 
             }
 

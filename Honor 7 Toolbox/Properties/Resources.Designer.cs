@@ -83,6 +83,16 @@ namespace Honor_7_Toolbox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap huawei {
+            get {
+                object obj = ResourceManager.GetObject("huawei", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tools {
             get {
                 object obj = ResourceManager.GetObject("Tools", resourceCulture);
