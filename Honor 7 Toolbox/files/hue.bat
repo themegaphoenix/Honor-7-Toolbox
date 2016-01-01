@@ -1,5 +1,6 @@
 echo off
 cd files
+cls
 echo ===============================================================================
 echo ***                    HONOR 7 ToolBox by TheMegaPhoenix                    ***
 echo ***                      Huawei Update Extractor Tool                       ***

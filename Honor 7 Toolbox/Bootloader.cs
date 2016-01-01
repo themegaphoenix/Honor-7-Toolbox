@@ -18,9 +18,47 @@ namespace Honor_7_Toolbox
 {
     public partial class Bootloader : Syncfusion.Windows.Forms.MetroForm
     {
+        
+
         public Bootloader()
         {
             InitializeComponent();
         }
+
+        private void getCodeBtn_Click(object sender, EventArgs e)
+        {
+            
+            System.Diagnostics.Process.Start("https://www.emui.com/plugin.php?id=unlock&mod=detail");
+            System.Diagnostics.Process.Start("http://forum.xda-developers.com/honor-7/general/bootloader-unlocking-t3196243");
+        }
+
+        private void unlockBootloaderBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(@"files\unlockboot.bat");
+                
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+            }
+        }
+
+        private void lockBootloaderBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start(@"files\lockboot.bat");
+
+                this.Close();
+            }
+            catch
+            {
+                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+            }
+        }
     }
+    
 }

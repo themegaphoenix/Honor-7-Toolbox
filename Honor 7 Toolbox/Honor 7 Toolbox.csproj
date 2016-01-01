@@ -122,7 +122,15 @@
     <Compile Include="ToolsInstallMenu.Designer.cs">
       <DependentUpon>ToolsInstallMenu.cs</DependentUpon>
     </Compile>
+    <Content Include="files\lockboot.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\unlockbootloader.png" />
+    <None Include="Resources\lockbootloader.png" />
     <None Include="Resources\huawei.png" />
+    <EmbeddedResource Include="Bootloader.resx">
+      <DependentUpon>Bootloader.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstallingADB.resx">
       <DependentUpon>InstallingADB.cs</DependentUpon>
     </EmbeddedResource>
