@@ -140,6 +140,7 @@
     <Content Include="files\bootReco.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\twrp.png" />
     <None Include="Resources\Recovery.png" />
     <None Include="Resources\bootloader.png" />
     <None Include="Resources\unlockbootloader.png" />

@@ -38,11 +38,11 @@ namespace Honor_7_Toolbox
             this.components = new System.ComponentModel.Container();
             this.stockRecoBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.bootRecoBtn = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.twrpRecoBtn = new Syncfusion.Windows.Forms.ButtonAdv();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // stockRecoBtn
@@ -73,26 +73,6 @@ namespace Honor_7_Toolbox
             this.bootRecoBtn.Text = "Boot to recovery";
             this.bootRecoBtn.Click += new System.EventHandler(this.bootRecoBtn_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.unlockbootloader;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 217);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 80);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.lockbootloader;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(317, 114);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 80);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // twrpRecoBtn
             // 
             this.twrpRecoBtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
@@ -106,6 +86,24 @@ namespace Honor_7_Toolbox
             this.twrpRecoBtn.TabIndex = 10;
             this.twrpRecoBtn.Text = "Flash TWRP";
             this.twrpRecoBtn.Click += new System.EventHandler(this.twrpRecoBtn_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(299, 30);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 93);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 154);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(115, 106);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // Recovery
             // 
@@ -121,8 +119,8 @@ namespace Honor_7_Toolbox
             this.MinimumSize = new System.Drawing.Size(440, 354);
             this.Name = "Recovery";
             this.Text = "Recovery";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

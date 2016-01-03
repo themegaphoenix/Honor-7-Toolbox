@@ -121,6 +121,9 @@
   <data name="bootloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bootloader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Recovery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Recovery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lockbootloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lockbootloader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -139,7 +142,7 @@
   <data name="Tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Recovery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Recovery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="twrp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\twrp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
