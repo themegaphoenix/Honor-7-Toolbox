@@ -1,7 +1,7 @@
 echo off
 cd files
 cls
-color 0c
+color 0C
 echo ===============================================================================
 echo ***                    HONOR 7 ToolBox by TheMegaPhoenix                    ***
 echo ***                       Unlocking the bootloader                          ***
@@ -30,4 +30,23 @@ fastboot devices
 fastboot oem unlock %input%
 pause
 fastboot reboot
-exit
+pause
+
+:flashReco
+cls
+echo ===============================================================================
+echo ***                    HONOR 7 ToolBox by TheMegaPhoenix                    ***
+echo ===============================================================================
+echo.
+echo                       Bootloader unlocked sucessfully!
+echo. 
+echo                 Do you want to flash a custom recovery (TWRP)?                            
+echo.                                                      
+echo.                      
+echo ===============================================================================
+echo ***                Select "Y" or "N" and press "Enter"                   ***
+echo ===============================================================================
+echo.
+set /p input=Please enter your choice:
+if /I '%input%'=='Y' call flashTWRP
+if /I '%input%'=='N' goto exit

@@ -33,13 +33,13 @@ namespace Honor_7_Toolbox
             DownloadingHiSuite.Show();
         }
 
-        private void buttonAdv1_Click(object sender, EventArgs e)
+        private void installADBbtn_Click(object sender, EventArgs e)
         {
             InstallingADB = new InstallingADB();
             InstallingADB.Show();
         }
 
-        private void buttonAdv3_Click(object sender, EventArgs e)
+        private void hueBtn_Click(object sender, EventArgs e)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace Honor_7_Toolbox
             }
             catch
             {
-                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+                MessageBox.Show("File 'hue.bat' does not exit!", "Error!");
             }
         }
 

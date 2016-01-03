@@ -73,6 +73,16 @@ namespace Honor_7_Toolbox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bootloader {
+            get {
+                object obj = ResourceManager.GetObject("bootloader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hisuite {
             get {
                 object obj = ResourceManager.GetObject("hisuite", resourceCulture);
@@ -96,6 +106,16 @@ namespace Honor_7_Toolbox.Properties {
         internal static System.Drawing.Bitmap lockbootloader {
             get {
                 object obj = ResourceManager.GetObject("lockbootloader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Recovery {
+            get {
+                object obj = ResourceManager.GetObject("Recovery", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -38,7 +38,7 @@ namespace Honor_7_Toolbox
             this.components = new System.ComponentModel.Container();
             this.InstallHiSuiteBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.installADBbtn = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.hue = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.hueBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -73,21 +73,21 @@ namespace Honor_7_Toolbox
             this.installADBbtn.Size = new System.Drawing.Size(159, 45);
             this.installADBbtn.TabIndex = 1;
             this.installADBbtn.Text = "Install ADB";
-            this.installADBbtn.Click += new System.EventHandler(this.buttonAdv1_Click);
+            this.installADBbtn.Click += new System.EventHandler(this.installADBbtn_Click);
             // 
-            // hue
+            // hueBtn
             // 
-            this.hue.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
-            this.hue.BackColor = System.Drawing.Color.White;
-            this.hue.BeforeTouchSize = new System.Drawing.Size(159, 45);
-            this.hue.ForeColor = System.Drawing.Color.Black;
-            this.hue.IsBackStageButton = false;
-            this.hue.Location = new System.Drawing.Point(219, 222);
-            this.hue.Name = "hue";
-            this.hue.Size = new System.Drawing.Size(159, 45);
-            this.hue.TabIndex = 9;
-            this.hue.Text = "Install Huawei Update Extractor";
-            this.hue.Click += new System.EventHandler(this.buttonAdv3_Click);
+            this.hueBtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.hueBtn.BackColor = System.Drawing.Color.White;
+            this.hueBtn.BeforeTouchSize = new System.Drawing.Size(159, 45);
+            this.hueBtn.ForeColor = System.Drawing.Color.Black;
+            this.hueBtn.IsBackStageButton = false;
+            this.hueBtn.Location = new System.Drawing.Point(219, 222);
+            this.hueBtn.Name = "hueBtn";
+            this.hueBtn.Size = new System.Drawing.Size(159, 45);
+            this.hueBtn.TabIndex = 9;
+            this.hueBtn.Text = "Install Huawei Update Extractor";
+            this.hueBtn.Click += new System.EventHandler(this.hueBtn_Click);
             // 
             // pictureBox3
             // 
@@ -125,7 +125,7 @@ namespace Honor_7_Toolbox
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 328);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.hue);
+            this.Controls.Add(this.hueBtn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.installADBbtn);
@@ -149,7 +149,7 @@ namespace Honor_7_Toolbox
         private Syncfusion.Windows.Forms.ButtonAdv installADBbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Syncfusion.Windows.Forms.ButtonAdv hue;
+        private Syncfusion.Windows.Forms.ButtonAdv hueBtn;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

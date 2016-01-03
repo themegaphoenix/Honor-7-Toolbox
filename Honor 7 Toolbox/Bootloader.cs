@@ -42,7 +42,7 @@ namespace Honor_7_Toolbox
             }
             catch
             {
-                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+                MessageBox.Show("File 'unlockboot.bat' does not exit!", "Error!");
             }
         }
 
@@ -56,7 +56,7 @@ namespace Honor_7_Toolbox
             }
             catch
             {
-                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+                MessageBox.Show("File 'lockboot.bat' does not exit!", "Error!");
             }
         }
     }

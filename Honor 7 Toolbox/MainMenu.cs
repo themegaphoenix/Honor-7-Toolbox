@@ -21,6 +21,7 @@ namespace Honor_7_Toolbox
     {
         private ToolsInstallMenu ToolsInstallMenu;
         private Bootloader Bootloader;
+        private Recovery Recovery;
         public MainMenu()
         {
             InitializeComponent();
@@ -47,6 +48,12 @@ namespace Honor_7_Toolbox
             Bootloader = new Bootloader();
             Bootloader.Show();
             
+        }
+
+        private void recoveryBtn_Click(object sender, EventArgs e)
+        {
+            Recovery = new Recovery();
+            Recovery.Show();
         }
     }
     
