@@ -64,9 +64,11 @@ namespace Honor_7_Toolbox
             }
             catch
             {
-                MessageBox.Show("File doesn't exists or its corrupt! Download it again!", "Error!");
+                MessageBox.Show("File 'bootReco.bat' does not exit!", "Error!"); ;
             }
         }
+
+        
     }
     
 }

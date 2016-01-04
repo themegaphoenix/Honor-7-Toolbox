@@ -89,6 +89,7 @@ namespace Honor_7_Toolbox
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.twrp;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(299, 30);
             this.pictureBox2.Name = "pictureBox2";
@@ -98,6 +99,7 @@ namespace Honor_7_Toolbox
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.Recovery;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(12, 154);
             this.pictureBox1.Name = "pictureBox1";
