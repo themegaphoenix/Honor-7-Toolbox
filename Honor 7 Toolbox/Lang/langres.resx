@@ -117,35 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bootloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bootloader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bootloader" xml:space="preserve">
+    <value>Bootloader</value>
   </data>
-  <data name="Recovery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Recovery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="recovery" xml:space="preserve">
+    <value>Recovery</value>
   </data>
-  <data name="lockbootloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lockbootloader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="startBtn" xml:space="preserve">
+    <value>Install Tool</value>
   </data>
-  <data name="huawei" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\huawei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unlockbootloader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unlockbootloader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="hisuite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hisuite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="adb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\adb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="twrp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\twrp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Update" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="update" xml:space="preserve">
+    <value>Update</value>
   </data>
 </root>

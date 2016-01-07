@@ -37,9 +37,12 @@ namespace Honor_7_Toolbox
         {
             this.components = new System.ComponentModel.Container();
             this.tileLayout1 = new Syncfusion.Windows.Forms.Tools.TileLayout();
+            this.updateBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.recoveryBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.bootloaderBtn = new Syncfusion.Windows.Forms.ButtonAdv();
             this.StartBtn = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.enBtn = new Syncfusion.Windows.Forms.ButtonAdv();
+            this.buttonAdv1 = new Syncfusion.Windows.Forms.ButtonAdv();
             ((System.ComponentModel.ISupportInitialize)(this.tileLayout1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileLayout1.MainLayout)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +78,28 @@ namespace Honor_7_Toolbox
             this.tileLayout1.TextAlignment = Syncfusion.Windows.Forms.Tools.TextAlignment.Left;
             this.tileLayout1.TitleFont = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tileLayout1.Transparency = 10;
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.updateBtn.BackColor = System.Drawing.Color.Transparent;
+            this.updateBtn.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.Update;
+            this.updateBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.updateBtn.BeforeTouchSize = new System.Drawing.Size(118, 122);
+            this.updateBtn.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.Black;
+            this.updateBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.updateBtn.IsBackStageButton = false;
+            this.updateBtn.Location = new System.Drawing.Point(507, 345);
+            this.updateBtn.MetroColor = System.Drawing.Color.White;
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(118, 122);
+            this.updateBtn.TabIndex = 4;
+            this.updateBtn.Text = "Update";
+            this.updateBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.updateBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.updateBtn.UseVisualStyle = true;
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // recoveryBtn
             // 
@@ -142,11 +167,58 @@ namespace Honor_7_Toolbox
             this.StartBtn.UseVisualStyle = true;
             this.StartBtn.Click += new System.EventHandler(this.StartBtn_Click);
             // 
+            // enBtn
+            // 
+            this.enBtn.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.enBtn.BackColor = System.Drawing.Color.Transparent;
+            this.enBtn.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.Update;
+            this.enBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.enBtn.BeforeTouchSize = new System.Drawing.Size(35, 36);
+            this.enBtn.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enBtn.ForeColor = System.Drawing.Color.Black;
+            this.enBtn.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.enBtn.IsBackStageButton = false;
+            this.enBtn.Location = new System.Drawing.Point(527, 0);
+            this.enBtn.MetroColor = System.Drawing.Color.White;
+            this.enBtn.Name = "enBtn";
+            this.enBtn.Size = new System.Drawing.Size(35, 36);
+            this.enBtn.TabIndex = 5;
+            this.enBtn.Text = "Update";
+            this.enBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.enBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.enBtn.UseVisualStyle = true;
+            this.enBtn.Click += new System.EventHandler(this.enBtn_Click);
+            // 
+            // buttonAdv1
+            // 
+            this.buttonAdv1.Appearance = Syncfusion.Windows.Forms.ButtonAppearance.Metro;
+            this.buttonAdv1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAdv1.BackgroundImage = global::Honor_7_Toolbox.Properties.Resources.Update;
+            this.buttonAdv1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAdv1.BeforeTouchSize = new System.Drawing.Size(35, 36);
+            this.buttonAdv1.Font = new System.Drawing.Font("Roboto Condensed", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdv1.ForeColor = System.Drawing.Color.Black;
+            this.buttonAdv1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAdv1.IsBackStageButton = false;
+            this.buttonAdv1.Location = new System.Drawing.Point(110, 431);
+            this.buttonAdv1.MetroColor = System.Drawing.Color.White;
+            this.buttonAdv1.Name = "buttonAdv1";
+            this.buttonAdv1.Size = new System.Drawing.Size(35, 36);
+            this.buttonAdv1.TabIndex = 6;
+            this.buttonAdv1.Text = "Update";
+            this.buttonAdv1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonAdv1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.buttonAdv1.UseVisualStyle = true;
+            this.buttonAdv1.Click += new System.EventHandler(this.buttonAdv1_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 479);
+            this.Controls.Add(this.buttonAdv1);
+            this.Controls.Add(this.enBtn);
+            this.Controls.Add(this.updateBtn);
             this.Controls.Add(this.recoveryBtn);
             this.Controls.Add(this.bootloaderBtn);
             this.Controls.Add(this.StartBtn);
@@ -166,5 +238,8 @@ namespace Honor_7_Toolbox
         private Syncfusion.Windows.Forms.ButtonAdv StartBtn;
         private Syncfusion.Windows.Forms.ButtonAdv bootloaderBtn;
         private Syncfusion.Windows.Forms.ButtonAdv recoveryBtn;
+        private Syncfusion.Windows.Forms.ButtonAdv updateBtn;
+        private Syncfusion.Windows.Forms.ButtonAdv enBtn;
+        private Syncfusion.Windows.Forms.ButtonAdv buttonAdv1;
     }
 }

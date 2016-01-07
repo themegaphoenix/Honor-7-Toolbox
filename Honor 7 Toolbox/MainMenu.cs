@@ -14,6 +14,10 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Net;
+using System.Globalization;
+using System.Reflection;
+using System.Resources;
+using AutoUpdaterDotNET;
 
 namespace Honor_7_Toolbox
 {
@@ -32,7 +36,21 @@ namespace Honor_7_Toolbox
         private void MainMenu_Load(object sender, EventArgs e)
         {
             this.Text = "Honor 7 Toolbox " + Application.ProductVersion.ToString() + " by TheMegaPhoenix";
-            
+            //Uncomment below line to see Russian version
+
+            //AutoUpdater.CurrentCulture = CultureInfo.CreateSpecificCulture("ru-RU");
+
+            //If you want to open download page when user click on download button uncomment below line.
+
+            //AutoUpdater.OpenDownloadPage = true;
+
+            //Don't want user to select remind later time in AutoUpdater notification window then uncomment 3 lines below so default remind later time will be set to 2 days.
+
+            //AutoUpdater.LetUserSelectRemindLater = false;
+            //AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Days;
+            //AutoUpdater.RemindLaterAt = 2;
+            AutoUpdater.Start("https://copy.com/29WGqPWeh2hvpxw6");
+
         }
 
         private void StartBtn_Click(object sender, EventArgs e)
@@ -54,6 +72,45 @@ namespace Honor_7_Toolbox
         {
             Recovery = new Recovery();
             Recovery.Show();
+        }
+
+        private void updateBtn_Click(object sender, EventArgs e)
+        {
+            //Uncomment below line to see Russian version
+
+            //AutoUpdater.CurrentCulture = CultureInfo.CreateSpecificCulture("ru-RU");
+
+            //If you want to open download page when user click on download button uncomment below line.
+
+            AutoUpdater.OpenDownloadPage = true;
+
+            //Don't want user to select remind later time in AutoUpdater notification window then uncomment 3 lines below so default remind later time will be set to 2 days.
+
+            AutoUpdater.LetUserSelectRemindLater = false;
+            //AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Days;
+            //AutoUpdater.RemindLaterAt = 2;
+            AutoUpdater.Start("https://copy.com/29WGqPWeh2hvpxw6");
+        }
+
+        private void getRes(CultureInfo ci)
+        {
+           // Assembly a = Assembly.Load("Honor 7 Toolbox");
+            ResourceManager rm = new ResourceManager("Honor 7 Toolbox.Lang.langres", Assembly.GetExecutingAssembly());
+            StartBtn.Text = rm.GetString("startBtn", ci);
+            bootloaderBtn.Text = rm.GetString("bootloader", ci);
+            recoveryBtn.Text = rm.GetString("recovery", ci);
+            updateBtn.Text = rm.GetString("update", ci);
+        }
+        private void enBtn_Click(object sender, EventArgs e)
+        {
+            CultureInfo ci = new CultureInfo("en-UK");
+            getRes(ci);
+        }
+
+        private void buttonAdv1_Click(object sender, EventArgs e)
+        {
+            CultureInfo ci = new CultureInfo("fr-FR");
+            getRes(ci);
         }
     }
     
